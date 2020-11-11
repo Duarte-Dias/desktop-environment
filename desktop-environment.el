@@ -447,9 +447,7 @@ the screen."
            (,(kbd "<XF86Bluetooth>") . ,(function desktop-environment-toggle-bluetooth))
            (,(kbd "<XF86AudioPlay>") . ,(function desktop-environment-toggle-music))
            (,(kbd "<XF86AudioNext>") . ,(function desktop-environment-next-song))
-           (,(kbd "<XF86AudioPrev>") . ,(function desktop-environment-previous-song))
-           ))
-        
+           (,(kbd "<XF86AudioPrev>") . ,(function desktop-environment-previous-song))))
         (map (make-sparse-keymap)))
     (dolist (keybinding desktop-environment--keybindings)
       (define-key map (car keybinding) (cdr keybinding)))
